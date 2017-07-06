@@ -25,3 +25,7 @@
 # Ignore database
 /config/database.yml
 /config/secrets.yml
+
+# Ignore some auto-create file from framgia-ci
+.framgia-ci-reports
+.framgia-ci-result.temp.yml

@@ -2,12 +2,26 @@ en:
   static_pages:
     application:
       title: |
-        | Ruby on Rails Tutorial Sample App
+        Ruby on Rails Tutorial Sample App
+      link_to_1: "sample app"
+      link_to_2: "Home"
+      link_to_3: "Help"
+      link_to_4: "Log in"
+      link_to_5: "About"
+      link_to_6: "Contact"
+      sentence_0: "The"
+      link_1: "Ruby on Rails Tutorial"
+      sentence_1: "by"
+      link_2: "Michael Hartl"
+      link_3: "News"
     home:
       header: "Sample App"
+      sentence_0: "Welcome to the Sample App"
       sentence_1: "This is the home page for the"
       link: "Ruby on Rails Tutorial"
       sentence_2: "sample application."
+      link_to_1: "Sign up now!"
+      link_to_2: "Rails logo"
     help:
       header: "Help"
       sentence_1: "Get help on the Ruby on Rails Tutorial at the"
@@ -30,3 +44,6 @@ en:
       sentence_4: "to teach web development with"
       link_4: "Ruby on Rails"
       sentence_5: "This is the sample application for the tutorial."
+    signup:
+      header: "Sign up"
+      sentence: "This will be a signup page for new users."

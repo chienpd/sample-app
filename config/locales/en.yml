@@ -1,4 +1,9 @@
 en:
+  user:
+    success_sign_up: "Welcome to the Sample App!"
+    confirm: "Confirmation"
+    create: "Create my account"
+    not_found: "User not found !"
   static_pages:
     application:
       title: |
@@ -27,8 +32,8 @@ en:
       sentence_1: "Get help on the Ruby on Rails Tutorial at the"
       link_1: "Rails Tutorial help section"
       sentence_2: "To get help on this sample app, see the"
-      link_2: Ruby on Rails Tutorial
-      sentence_3: "book"
+      link_2: "Ruby on Rails Tutorial"
+      link_3: "book"
     contact:
       header: "Contact"
       sentence_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
@@ -47,3 +52,5 @@ en:
     signup:
       header: "Sign up"
       sentence: "This will be a signup page for new users."
+  error:
+    sentence: "The form contains"

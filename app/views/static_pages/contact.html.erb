@@ -2,5 +2,6 @@
 <h1><%= t "static_pages.contact.header"%></h1>
 <p>
   <%= t "static_pages.contact.sentence_1" %>
-  <a href="http://www.railstutorial.org/contact"><%= t "static_pages.contact.link" %></a>.
+  <%= link_to t("static_pages.contact.link"),
+    "http://www.railstutorial.org/contact" %>.
 </p>

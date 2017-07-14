@@ -1,5 +1,5 @@
 RemoveUnusedMethodsInControllersCheck: {
   except_methods: ["StaticPagesController#home","StaticPagesController#help",
     "StaticPagesController#about", "StaticPagesController#contact",
-    "UserController#new"]
+    "UsersController#new", "UsersController#show", "UsersController#create"]
 }

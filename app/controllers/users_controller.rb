@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   attr_reader :user
+
   def new
     @user = User.new
   end
@@ -7,6 +8,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      log_in @user
       flash[:success] = t "user.success_sign_up"
       redirect_to @user
     else

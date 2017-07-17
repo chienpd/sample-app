@@ -5,6 +5,13 @@ en:
     create: "Create my account"
     not_found: "User not found !"
   static_pages:
+    header:
+      users: "Users"
+      acc: "Account"
+      prf: "Profile"
+      sett: "Settings"
+      logout: "Logout"
+      log_in: "Log in"
     application:
       title: |
         Ruby on Rails Tutorial Sample App
@@ -54,3 +61,10 @@ en:
       sentence: "This will be a signup page for new users."
   error:
     sentence: "The form contains"
+    sentence_2: "Invalid email/password combination"
+  session:
+    login:
+      header: "Log in"
+      login_btn: "Log in"
+      sentence_new: "New user?"
+      signup_now: "Sign up now!"

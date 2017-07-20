@@ -2,5 +2,5 @@ IrresponsibleModule:
   enabled: false
 FeatureEnvy:
   enabled: false
-InstanceVariableAssumption:
+Attribute:
   enabled: false

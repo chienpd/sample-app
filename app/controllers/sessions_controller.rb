@@ -1,16 +1,5 @@
 class SessionsController < ApplicationController
-  def new
-  end
-
-  def login_success user
-    log_in user
-    redirect_to user
-  end
-
-  def login_fail
-    flash[:danger] = t "error.sentence_2"
-    render :new
-  end
+  def new; end
 
   def create
     session = params[:session]
@@ -23,7 +12,19 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
+  end
+
+  private
+  def login_success user
+    log_in user
+    params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+    redirect_to user
+  end
+
+  def login_fail
+    flash[:danger] = t "error.sentence_2"
+    render :new
   end
 end

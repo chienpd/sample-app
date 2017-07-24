@@ -1,6 +1,4 @@
 class SessionsController < ApplicationController
-  def new; end
-
   def create
     session = params[:session]
     user = User.find_by email: session[:email].downcase
@@ -20,7 +18,7 @@ class SessionsController < ApplicationController
   def login_success user
     log_in user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
   end
 
   def login_fail

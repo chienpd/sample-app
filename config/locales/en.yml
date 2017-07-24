@@ -4,6 +4,19 @@ en:
     confirm: "Confirmation"
     create: "Create my account"
     not_found: "User not found !"
+    updated: "Profile updated"
+    deleted: "User deleted"
+    login: "Please log in."
+    delete: "delete"
+    sure: "You sure?"
+    change: "change"
+    edit:
+      title: "Edit user"
+      header: "Update your profile"
+      btt_save: "Save changes"
+    index:
+      title: "All users"
+      header: "All users"
   static_pages:
     header:
       users: "Users"
@@ -59,6 +72,7 @@ en:
     signup:
       header: "Sign up"
       sentence: "This will be a signup page for new users."
+      create: "Create my account"
   error:
     sentence: "The form contains"
     sentence_2: "Invalid email/password combination"

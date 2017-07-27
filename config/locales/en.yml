@@ -10,6 +10,18 @@ en:
     delete: "delete"
     sure: "You sure?"
     change: "change"
+    checkmail: "Please check your email to activate your account."
+    acc_act:
+      header: "Sample App"
+      hi: "Hi"
+      activated: "Account activated!"
+      invalid_link: "Invalid activation link"
+      not_activated:  "Account not activated. Check your email for the activation link."
+      sentence_1: "Welcome to the Sample App! Click on the link below to activate your account:"
+      link_1: "Activate"
+    mailer:
+      activation: "Account activation"
+      hi: "Hi"
     edit:
       title: "Edit user"
       header: "Update your profile"

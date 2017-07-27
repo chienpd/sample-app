@@ -85,7 +85,7 @@ GEM
       xpath (~> 2.0)
     childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
-    code_analyzer (0.4.7)
+    code_analyzer (0.4.8)
       sexp_processor
     codeclimate-engine-rb (0.4.0)
       virtus (~> 1.0)
@@ -207,9 +207,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails_best_practices (1.18.1)
+    rails_best_practices (1.19.0)
       activesupport
-      code_analyzer (>= 0.4.3)
+      code_analyzer (>= 0.4.8)
       erubis
       i18n
       json

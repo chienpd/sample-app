@@ -30,3 +30,15 @@
 # Ignore some auto-create file from framgia-ci
 .framgia-ci-reports
 .framgia-ci-result.temp.yml
+
+# Ignore uploaded test images.
+/public/uploads/
+
+# Ignore config
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+config/settings/
+
+# Ignore JS
+/public/javascripts/

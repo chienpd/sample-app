@@ -1,0 +1,4 @@
+max_content: 140
+picture_size: 5
+micropost_user_size: 50
+picture_type: "image/jpeg,image/gif,image/png"

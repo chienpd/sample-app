@@ -14,6 +14,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new user_params
+
     if user.save
       user.send_activation_email
       flash[:info] = t "user.checkmail"
@@ -26,8 +27,12 @@ class UsersController < ApplicationController
   def show
     if user
       @microposts = user.microposts.order_desc.paginate page: params[:page]
+      render locals: {
+        relationship_build: relationship_build,
+        relationship_destroy: relationship_destroy
+      }
     else
-      flash[:danger] = t "user.not_found"
+      flash[:danger] = t "user.url_invalid"
       redirect_to root_url
     end
   end
@@ -68,8 +73,17 @@ class UsersController < ApplicationController
 
   def find_user
     @user = User.find_by id: params[:id]
+
     return if user
     flash[:danger] = t "user.not_found"
     redirect_to root_path
+  end
+
+  def relationship_build
+    current_user.active_relationships.build
+  end
+
+  def relationship_destroy
+    current_user.active_relationships.find_by followed_id: user.id
   end
 end

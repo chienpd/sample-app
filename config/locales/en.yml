@@ -11,6 +11,7 @@ en:
     sure: "You sure?"
     change: "change"
     checkmail: "Please check your email to activate your account."
+    url_valid: "URL invaild!"
     acc_act:
       header: "Sample App"
       hi: "Hi"
@@ -133,3 +134,14 @@ en:
     feed: "Micropost Feed"
     mpost: "Microposts"
     compose: "Compose new micropost..."
+  follow:
+    following:
+      title: "Following"
+    followed:
+      title: "Followers"
+    stat:
+      following: "following"
+      followers: " followers"
+    follow_btn: "Follow"
+    unfollow_btn: "Unfollow"
+    mcpost: "Microposts:"
